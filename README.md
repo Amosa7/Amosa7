@@ -34,10 +34,10 @@
 
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Amosa7&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
+## My Portfolio Projects
 
-## My Portfolio Projects 
-<!-- BLOG_LIST: START -->
-<!-- BLOG_LIST: END -->
+🛠️  [SALGIDAD TRYCYLE](https://github.com/Amosa7/Git-sample-file/blob/7d63ce793ba5d96c72c8e2ff0c8f96fe9e70e752/project-1.md)
+
 
 # Visitor Count 🤝 
 [![](https://visitcount.itsvg.in/api?id=Amosa7&icon=0&color=0)](https://visitcount.itsvg.in)
