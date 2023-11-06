@@ -19,5 +19,5 @@ jobs:
       - name: Update README with Project Updates
         uses: kaustubhgupta/readme-projects-display@master
         with:
-          gh_token: ${{ secrets.TOKEN }}
+          feed_list: "[Project 1](https://github.com/Amosa7/Git-sample-file/blob/7d63ce793ba5d96c72c8e2ff0c8f96fe9e70e752/project-1.md): Description of Project 1\n[Project 2](link-to-project-2): README file f SALGIDAD"
           # Ensure you have a secret named TOKEN to store the access token.
