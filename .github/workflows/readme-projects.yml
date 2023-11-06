@@ -1,17 +1,23 @@
-name: Update Projects
+name: Update README with Project Updates
+
 on:
   schedule:
     - cron: '0 0 * * 0'
-    # This makes the action run at midnight (00:00) every Sunday. Customize this accordingly or you can also trigger this action for GitHub events (Pull, Push). Check the GitHub actions page for that.
+    # This schedule runs the action at midnight (00:00) every Sunday. Customize as needed.
   workflow_dispatch:
-    # workflow_dispatch allows you to trigger the action any time manually
+    # Use workflow_dispatch to trigger the action manually.
 
 jobs:
-  update-readme-with-projects:
-    name: Update this repo's README with latest project updates
+  update-readme:
+    name: Update README
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: kaustubhgupta/readme-projects-display@master
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Update README with Project Updates
+        uses: kaustubhgupta/readme-projects-display@master
         with:
-          gh_token: ${{ secrets.TOKEN }} # Create a secret to store the access token 
+          gh_token: ${{ secrets.TOKEN }}
+          # Ensure you have a secret named TOKEN to store the access token.
