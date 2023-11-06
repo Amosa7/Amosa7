@@ -1,23 +1,19 @@
-name: Update README with Project Updates
-
+name: Latest blog post workflow
 on:
-  schedule:
-    - cron: '0 0 * * 0'
-    # This schedule runs the action at midnight (00:00) every Sunday. Customize as needed.
-  workflow_dispatch:
-    # Use workflow_dispatch to trigger the action manually.
+  schedule: # Run workflow automatically
+    - cron: '0 * * * *' # Runs every hour, on the hour
+  workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the GitHub Actions Workflow page directly
+permissions:
+  contents: write # To write the generated contents to the readme
 
 jobs:
-  update-readme:
-    name: Update README
+  update-readme-with-blog:
+    name: Update this repo's README with latest blog posts
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v2
-
-      - name: Update README with Project Updates
-        uses: kaustubhgupta/readme-projects-display@master
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Pull in dev.to posts
+        uses: gautamkrishnar/blog-post-workflow@v1
         with:
-          feed_list: "[Project 1](https://github.com/Amosa7/Git-sample-file/blob/7d63ce793ba5d96c72c8e2ff0c8f96fe9e70e752/project-1.md): Description of Project 1\n[Project 2](link-to-project-2): README file f SALGIDAD"
-          # Ensure you have a secret named TOKEN to store the access token.
+          feed_list: "https://dev.to/feed/gautamkrishnar,https://www.gautamkrishnar.com/feed/"
