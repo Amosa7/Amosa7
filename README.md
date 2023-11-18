@@ -32,7 +32,7 @@
 
 🛠️  [RUNNING A LOCAL WEB SERVER(HTTP SERVER) WITH DOCKER  🐳](https://github.com/Amosa7/salgidad-webpage-project/blob/5af998c2fe58c36472f1eeb5585ccf1f58d97b60/Project-1.md)
 
-🛠️  [SIMULATING JENKINS AUTOMATION 🤖 TO DEPLOY CONTAINERIZED 🐳 JS WEBAPP USING GITHUB ACTION](https://github.com/Amosa7/salgidad-webpage-project/blob/5af998c2fe58c36472f1eeb5585ccf1f58d97b60/Project-1.md)
+🛠️  [SIMULATING JENKINS AUTOMATION 🤖 TO DEPLOY CONTAINERIZED 🐳 JS WEBAPP USING GITHUB ACTION](https://github.com/Amosa7/todo-app-cicd-github-actions/blob/24d09c7af826b99a2c53debebdc1fdad8ff70fda/Project-2.md)
 
 # 📊 GitHub Stats:
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=amosa7&show_icons=true&locale=en&theme=dark" alt="amosa7" /></p>
